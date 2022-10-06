@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Open_Lab_04._07
 {
@@ -6,7 +6,15 @@ namespace Open_Lab_04._07
     {
         public string Reverse(string original)
         {
-            throw new NotImplementedException();
+            char[] c = original.ToCharArray();
+            string reversed = "";
+
+            for (int i = original.Length - 1; i >= 0; i--)
+            {                         
+                    reversed += c[i];
+            }
+            
+            return reversed;
         }
     }
 }
